@@ -1,0 +1,58 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    body 
+
+    section#introSection
+      img(src="https://pngimg.com/uploads/michael_jackson/small/michael_jackson_PNG4.png", alt="logo_image")
+      div Wellcome to Deepak's Dance Academy
+      .slogan  Follow your own rhythm.
+
+    section#ourMission 
+      h2 Our Mission
+      .outer-card 
+        .card  
+          h3 Dance Perfection 
+          hr
+          .card-box 
+            .card-img 
+            img.image( src="../static/logo/1.png", alt="")
+            .card-content 
+              p Lorem ipsum dolor sit amet consectetur adipisicing  elit.
+
+        .card
+          h3 Dance the way you like
+          hr
+          .card-box 
+            .card-img 
+            img.image( src="../static/logo/2.png", alt="")
+            .card-content 
+              p Lorem ipsum dolor sit amet consectetur adipisicing  elit.
+
+        .card
+          h3 Expert Teaching
+          hr
+          .card-box 
+            .card-img 
+            img.image( src="../static/logo/3.png", alt="")
+            .card-content 
+              p Lorem ipsum dolor sit amet consectetur adipisicing  elit.
+
+    section#sponsorsSection
+      h2 Our  Sponsors
+      #sponsors 
+        img(src="../static/logo/sponsor/7.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/2.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/3.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/4.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/5.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/1.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/6.jpg" alt="sponsor")
+        img(src="../static/logo/sponsor/8.jpg" alt="sponsor")

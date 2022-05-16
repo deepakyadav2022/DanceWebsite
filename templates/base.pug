@@ -1,0 +1,32 @@
+//- layout.pug
+html
+  head
+    title Deepak's Dance Academy
+    block scripts
+      script(src='/index.js')
+  body
+    nav#navbar  
+          div.img
+            a(href="/") 
+                img(src="../static/logo/main8.png", alt="logo_image")
+          ul
+            li
+              a(href="/") Home 
+            li
+              a(href="/about") About 
+            li
+              a(href="/services") Services  
+            li
+              a(href="/class") Class Info  
+            li
+              a(href="/contact") Contact Us 
+          
+    block style 
+        style
+            include ../static/style.css
+            
+    block content
+        
+    block foot
+      footer#footer
+        | Copyright &copy; 2022 DeepaksDanceAcadeny.com | All Rights Reserved
